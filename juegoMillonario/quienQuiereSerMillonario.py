@@ -6,7 +6,7 @@ from juegoMillonario.Dominio.especificacion import Especificacion
 from juegoMillonario.Dominio.historial import Historial
 from juegoMillonario.Dominio.jugador import Jugador
 from juegoMillonario.Dominio.partida import Partida
-from juegoMillonario.Infraestructura.persistencia import Persistencia
+from juegoMillonario.Infraestructura.persistenciaJugador import Persistencia
 from juegoMillonario.Dominio.pregunta import Pregunta
 from juegoMillonario.Dominio.registro import Registro
 from juegoMillonario.Dominio.categoria import Categoria
