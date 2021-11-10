@@ -7,7 +7,7 @@ class Amigo(Persona):
         self.codigoAmigo= codigoAmigo
         self.nivelConocimientoCategorias= nivelConocimientoCategorias
         self.jugador= jugador
-        #self.numeroTelefono= numeroTelefono
+        self.numeroTelefono= numeroTelefono
 
     def __repr__(self):
         repre= "Nombre:"+" "+self.nombre+" "+"Amigo de :"+" "+self.jugador.nombre
