@@ -4,10 +4,10 @@ class Amigo(Persona):
     def __init__(self,codigoAmigo,cedula,nombre,apellido,edad,correo,numeroTelefono,nivelConocimientoCategorias,jugador):
 
         super().__init__(cedula,nombre,apellido,edad,correo)
-        #self.codigoAmigo= codigoAmigo
+        self.codigoAmigo= codigoAmigo
         self.nivelConocimientoCategorias= nivelConocimientoCategorias
         self.jugador= jugador
-        self.numeroTelefono= numeroTelefono
+        #self.numeroTelefono= numeroTelefono
 
     def __repr__(self):
         repre= "Nombre:"+" "+self.nombre+" "+"Amigo de :"+" "+self.jugador.nombre
