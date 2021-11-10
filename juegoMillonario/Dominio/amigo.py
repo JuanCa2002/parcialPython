@@ -5,7 +5,7 @@ class Amigo(Persona):
 
         super().__init__(cedula,nombre,apellido,edad,correo)
         self.codigoAmigo= codigoAmigo
-        self.nivelConocimientoCategorias= nivelConocimientoCategorias
+        #self.nivelConocimientoCategorias= nivelConocimientoCategorias
         self.jugador= jugador
         self.numeroTelefono= numeroTelefono
 
