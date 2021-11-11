@@ -1,13 +1,12 @@
 class Categoria():
 
-    def __init__(self,codigoCategoria,nombreCategoria):
+    def __init__(self, codigoCategoria, nombreCategoria):
 
-       self.codigoCategoria= codigoCategoria
-       self.nombreCategoria= nombreCategoria
-
+        self.codigoCategoria = codigoCategoria
+        self.nombreCategoria = nombreCategoria
 
     def __repr__(self):
-        repre= "Categoria:"+" "+self.nombreCategoria
+        repre = "Categoria:" + " " + self.nombreCategoria
         return repre
 
     def cumple(self, especificacion):
@@ -16,4 +15,3 @@ class Categoria():
             if k not in dict_category or dict_category[k] != especificacion.get_value(k):
                 return False
         return True
-
