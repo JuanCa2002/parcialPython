@@ -10,6 +10,7 @@ class PersistenciaHistorial():
     def connect(self):
         self.crear_tabla_historial()
 
+
     def crear_tabla_historial(self):
         try:
             cursor = self.con.cursor()

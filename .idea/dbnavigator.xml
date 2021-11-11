@@ -25,30 +25,25 @@
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes>
-      <connection connection-id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3">
+      <connection connection-id="caf45ff1-80ac-4464-82af-88917bf9832c">
         <schema name="main" object-types="table, view, constraint, index, column, dataset trigger" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3">
+    <connection id="caf45ff1-80ac-4464-82af-88917bf9832c">
       <console name="Connection" type="STANDARD" schema="main" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3" object-ref="schemas/main/tables/CATEGORIA" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3" />
+    <connection id="caf45ff1-80ac-4464-82af-88917bf9832c" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3" dataset="main.JUGADOR" active-filter-id="ba4171dc-cb02-4b49-a8ae-7001e44b7e18">
-      <filter id="ba4171dc-cb02-4b49-a8ae-7001e44b7e18" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND" />
-    </filter-actions>
-    <filter-actions connection-id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3" dataset="main.CATEGORIA" active-filter-id="044027a1-b9fb-4c2e-a2d3-4fa9ca99e762">
-      <filter id="044027a1-b9fb-4c2e-a2d3-4fa9ca99e762" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND" />
+    <filter-actions connection-id="caf45ff1-80ac-4464-82af-88917bf9832c" dataset="main.HISTORIAL" active-filter-id="199706f2-452f-469e-add4-fd1bd748b0d6">
+      <filter id="199706f2-452f-469e-add4-fd1bd748b0d6" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND" />
     </filter-actions>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
@@ -77,7 +72,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="f16ca7dc-1b97-4df7-ab2d-b7838eff6bb3" active="true">
+      <connection id="caf45ff1-80ac-4464-82af-88917bf9832c" active="true">
         <database>
           <name value="Connection" />
           <description value="" />
@@ -122,7 +117,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
