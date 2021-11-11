@@ -3,7 +3,7 @@ import sqlite3
 from juegoMillonario.Dominio.historial import Historial
 
 
-class PersistenciaHitorial():
+class PersistenciaHistorial():
     def __init__(self):
         self.con = sqlite3.connect("quien_quiere_ser_millonario.sqlite")
 

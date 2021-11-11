@@ -1,8 +1,8 @@
 class Historial():
 
-    def __init__(self,codigoHistorial):
-        self.codigoHistorial= codigoHistorial
-        self.partidas= []
+    def __init__(self, codigoHistorial):
+        self.codigoHistorial = codigoHistorial
+        self.partidas = []
 
     def cumple(self, especificacion):
         dict_historial = self.__dict__
@@ -11,8 +11,5 @@ class Historial():
                 return False
         return True
 
-    def agregarPartida(self,partida):
+    def agregarPartida(self, partida):
         self.partidas.append(partida)
-
-
-

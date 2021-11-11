@@ -8,9 +8,9 @@ class PersistenciaCategoria():
         self.con = sqlite3.connect("quien_quiere_ser_millonario.sqlite")
 
     def connect(self):
-     self.crear_tabla_categoria()
+        self.__crear_tabla_categoria()
 
-    def crear_tabla_categoria(self):
+    def __crear_tabla_categoria(self):
         try:
             cursor = self.con.cursor()
             query = "CREATE TABLE CATEGORIA(codigoCategoria text primary key, nombreCategoria text)"
@@ -18,17 +18,16 @@ class PersistenciaCategoria():
         except sqlite3.OperationalError as ex:
             pass
 
-    def guardar_categoria(self, categoria : Categoria):
+    def guardar_categoria(self, categoria: Categoria):
         cursor = self.con.cursor()
         query = "INSERT INTO CATEGORIA(codigoCategoria , nombreCategoria ) VALUES(" \
                 f" ?,?)"
-        cursor.execute(query, (str(categoria.codigoCategoria), categoria.nombreCategoria))
+        cursor.execute(query, (categoria.codigoCategoria, categoria.nombreCategoria))
         self.con.commit()
 
     def consultar_tabla_categoria(self):
-        cursor=self.con.cursor()
-        query="SELECT * FROM CATEGORIA"
+        cursor = self.con.cursor()
+        query = "SELECT * FROM CATEGORIA"
         cursor.execute(query)
-        rows= cursor.fetchall()
-        return [Categoria(*row)for row in rows]
-
+        rows = cursor.fetchall()
+        return [Categoria(*row) for row in rows]
